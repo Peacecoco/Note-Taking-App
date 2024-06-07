@@ -1,0 +1,361 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 110px;
+    background-color: salmon;
+}
+
+h1{
+    text-align: center;
+}
+
+#note_app{
+    margin-top: 45px;
+}
+
+input{
+    width: 380px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder{
+    padding: 5px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+
+}
+button:hover{
+    background-color: aquamarine;
+    transition: 2s;
+}
+
+#addNote{
+    margin-left: 20px;
+}
+
+
+.note{
+    background: plum;
+    padding: 10px;
+    margin: 10px 0;
+    width: 450px;
+    height: 90px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    margin-left: 450px;
+}
+
+.note input{
+    flex: 1;
+    border: none;
+    background: transparent;
+}
+
+.note button{
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 18px;
+}
+
+.note button:hover{
+    background-color: aquamarine;
+    transition: 2s;
+}
+
+.app{
+    border: 2px solid black;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+/* Media Query for tablet/Ipads screen */
+@media screen and (min-width:481px) and (max-width:768px) {
+    h1{
+        font-size: 8px;
+        margin-left: -350px;
+        text-align: center;
+        margin-top: -80px;
+        margin-bottom: 10px;
+    }
+
+    /* body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    } */
+
+    .app{
+        /* border: 2px solid black; */
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        margin-left: -35px;
+        border: none;
+        font-size: 6px;
+        flex: 1;
+        margin-top: -20px;
+    }
+
+    input{
+        width: 120px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 8px;
+    }
+    
+    input::placeholder{
+        padding: 5px;
+        font-size: 7px;
+    }
+
+   #create{
+        width: 40px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 5px;
+    
+    }
+    #create:hover{
+        background-color: aquamarine;
+        transition: 2s;
+    }
+    
+    #addNote{
+        margin-left: 20px;
+    }
+
+    #createNote{
+        font-size: 6px;
+        width: 50px;
+        height: 20px;
+    }
+    
+    
+    .note{
+        background: plum;
+        padding: 10px;
+        margin: 10px 0;
+        width: 80px;
+        height: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        /* display: flex; */
+        justify-content: space-around;
+        margin-left: 8px;
+        margin-top: 33px;
+    }
+    
+    .note input{
+        /* flex: 1; */
+        border: none;
+        background: transparent;
+        font-size: 7px;
+        margin-top: -10px;
+        margin-left: -10px;
+        width: 290px;
+        padding: 5px;
+       
+    }
+    
+    .note button{
+        width: 90px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        /* margin-left: -45px; */
+        margin-top: 15px;
+        font-size: 5px;
+        font-weight: 20;
+        /* margin-left: -100px; */
+        /* gap: 50px; */
+        /* margin-left: auto; */
+        position: relative;
+        left: -100px;
+        /* left: 10px; */
+        /* margin-right: ; */
+        
+    }
+    
+    .note button:hover{
+        background-color: aquamarine;
+        transition: 2s;
+    }
+}
+
+
+/* Media Query for mobile screen */
+@media screen and (min-width:320px) and (max-width:480px) {
+    h1{
+        font-size: 5.5px;
+        margin-left: -225px;
+        text-align: center;
+        margin-top: -80px;
+    }
+
+    /* body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    } */
+
+    .app{
+        /* border: 2px solid black; */
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        margin-left: -55px;
+        border: none;
+        font-size: 3px;
+        flex: 1;
+        margin-top: -20px;
+    }
+
+    input{
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 5px;
+    }
+    
+    input::placeholder{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+   #create{
+        width: 40px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 5px;
+    
+    }
+    #create:hover{
+        background-color: aquamarine;
+        transition: 2s;
+    }
+    
+    #addNote{
+        margin-left: 20px;
+    }
+
+    #createNote{
+        font-size: 4px;
+        width: 30px;
+        height: 10px;
+    }
+    
+    
+    .note{
+        background: plum;
+        padding: 10px;
+        margin: 10px 0;
+        width: 80px;
+        height: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        /* display: flex; */
+        justify-content: space-around;
+        margin-left: 4px;
+        margin-top: 15px;
+    }
+    
+    .note input{
+        /* flex: 1; */
+        border: none;
+        background: transparent;
+        font-size: 5.3px;
+        margin-top: -10px;
+        margin-left: -10px;
+        width: 290px;
+       
+    }
+    
+    .note button{
+        width: 20px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        /* margin-left: -45px; */
+        margin-top: 10px;
+        font-size: 5px;
+        font-weight: 20;
+        /* gap: 50px; */
+        /* margin-left: auto; */
+        position: relative;
+        right: 70px;
+        /* left: 10px; */
+        
+        
+    }
+    
+    .note button:hover{
+        background-color: aquamarine;
+        transition: 2s;
+    }
+
+    /* buttons{
+        font-size: 5px;
+        width: 40px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: green;
+        margin-left: -25px;
+        line-height: 10px;
+        /* gap: 56px; */
+        /* margin-top: 10px;
+    }
+
+    buttonss{
+        font-size: 5px;
+        width: 20px;
+        height: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: green;
+        margin-left: -75px;
+        line-height: 10px;
+        gap: 6px;
+        margin-top: 10px; */
+    /* } */ */
+
+
+
+}
